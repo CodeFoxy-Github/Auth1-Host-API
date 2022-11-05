@@ -29,9 +29,9 @@ if (application == g) {
     document.getElementById('code').innerHTML = code1;
     console.log('Facebook: Button-text = login_with');
   } else {
-    console.log('N/A Button-text No Found! (' + buttontext + ')');
-    document.getElementById('appanme').innerHTML = 'facebook';
+    console.log('N/A Button-text Not Support!/Not Exist. (' + buttontext + ')');
   }
 } else {
-  console.log('N/A Application No Found! (' + application + ')');
+  console.log('N/A Application Not Support!/Not Exist. (' + application + ')');
 }
+document.getElementById('appanme').innerHTML = 'application';
