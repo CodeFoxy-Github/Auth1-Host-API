@@ -1,7 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const application = urlParams.get('app');
-const buttontext = urlParams.get('buttontext');
+const buttontext = urlParams.get('btntext');
 const g = 'google';
 const f = 'facebook';
 const lf = 'login_with';
@@ -23,7 +23,7 @@ if (application == g) {
     console.log('Facebook: Button-text = continue_with');
   } else if (buttontext == lf) {
     const code1 =
-      '<div class="fb-login-button" data-width="" data-size="large"data-button-type="continue_with" data-layout="default"data-auto-logout-link="false" data-use-continue-as="false"></div>';
+      '&lt;div class="fb-login-button" data-width="" data-size="large"data-button-type="continue_with" data-layout="default"data-auto-logout-link="false" data-use-continue-as="false"&lt;/div&gt;';
 
     console.log(code1);
     document.getElementById('code').innerHTML = code1;
