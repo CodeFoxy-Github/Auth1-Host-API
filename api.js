@@ -15,7 +15,7 @@ if (application == g) {
   } else if (buttontext == lf) {
     console.log('Facebook: Button-text = login_with');
     const code1 =
-      '\<div class\=\"fb-login-button\" data-width=\"\" data-size\=\"large\" data-button-type=\"continue_with\" data-layout=\"default\" data-auto-logout-link=\"false\" data-use-continue-as=\"false\"\>\<\/div\>';
+      ('\<div class\=\"fb-login-button\" data-width=\"\" data-size\=\"large\"data-button-type=\"continue_with\" data-layout=\"default\"data-auto-logout-link=\"false\" data-use-continue-as=\"false\"\>\<\/div\>');
     console.log(code1);
   } else {
     console.log('N/A Button-text No Found! (' + buttontext + ')');
