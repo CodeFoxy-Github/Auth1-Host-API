@@ -30,6 +30,7 @@ if (application == g) {
     console.log('Facebook: Button-text = login_with');
   } else {
     console.log('N/A Button-text No Found! (' + buttontext + ')');
+    document.getElementById('appanme').innerHTML = 'facebook';
   }
 } else {
   console.log('N/A Application No Found! (' + application + ')');
