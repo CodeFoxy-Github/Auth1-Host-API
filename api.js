@@ -34,4 +34,3 @@ if (application == g) {
 } else {
   console.log('N/A Application Not Support!/Not Exist. (' + application + ')');
 }
-document.getElementById('appanme').innerHTML = 'application';
