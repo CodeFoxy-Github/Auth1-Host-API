@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://storage.googleapis.com/github-p-dex-395020.appspot.com/assets/style.css?version=%REACT_APP_VERSION%" />
-    <h3>App</h3>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <h3 class="text-3xl font-bold">App</h3>
     <pre id="appname"></pre>
-    <h3>Script</h3>
+    <h3 class="text-3xl font-bold">Script</h3>
     <pre id="code"></pre>
     <script type="module" src="api.js"></script>
 
