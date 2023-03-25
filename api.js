@@ -15,3 +15,23 @@ You can learn more at:
 https://en.wikipedia.org/wiki/Self-XSS`,
   'font-size:2em'
 );
+
+if (application == g) {
+  console.log('Application Found! (Google)');
+} else if (application == f) {
+  console.log('Application Found! (Facebook)');
+  if (buttontext == cf) {
+    console.log('Facebook: Button-text = continue_with');
+  } else if (buttontext == lf) {
+    const code1 =
+      '&lt;div class="fb-login-button" data-width="" data-size="large"data-button-type="continue_with" data-layout="default"data-auto-logout-link="false" data-use-continue-as="false"&lt;/div&gt;';
+
+    console.log(code1);
+    document.getElementById('code').innerHTML = code1;
+    console.log('Facebook: Button-text = login_with');
+  } else {
+    console.log('N/A Button-text Not Support!/Not Exist. (' + buttontext + ')');
+  }
+} else {
+  console.log('N/A Application Not Support!/Not Exist. (' + application + ')');
+}
